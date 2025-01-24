@@ -65,7 +65,9 @@ onMounted(() => {
   @apply inline-block border-b font-bold mb-2 px-1 rounded;
 }
 
-.intro {
+.intro,
+.outro,
+.tag {
   @apply bg-red-400
 }
 
@@ -74,7 +76,8 @@ onMounted(() => {
 }
 
 .chorus,
-.prechorus {
+.prechorus,
+.postchorus {
   @apply bg-green-400
 }
 

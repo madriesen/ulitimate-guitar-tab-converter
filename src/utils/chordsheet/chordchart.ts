@@ -22,7 +22,7 @@ function getSectionContent(lines: string[]) {
 }
 
 function parseLyrics(input: string): string {
-    const regex = /([^\[]*)\[([A-Za-z#0-9]+)\]([^\s\[]*)|(\S+)/g;
+    const regex = /([^\[]*)\[([A-Za-z#0-9/]+)\]([^\s\[]*)|(\S+)/g;
     let match;
     let output = '';
 
