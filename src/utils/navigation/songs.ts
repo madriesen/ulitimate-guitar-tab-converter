@@ -8,7 +8,7 @@ export const songs = [
         link: 'https://tabs.ultimate-guitar.com/tab/benson-boone/beautiful-things-chords-5110429'
     },
     {
-        title: 'Budapest - George Ezra',
+        title: 'Budapest - George Ezra (In G)',
         link: 'https://tabs.ultimate-guitar.com/tab/george-ezra/budapest-chords-1452428'
     },
     {
@@ -60,7 +60,7 @@ export const songs = [
         link: 'https://tabs.ultimate-guitar.com/tab/vance-joy/riptide-chords-1173278'
     },
     {
-        title: 'Shut up and dance - Walk the moon (Capo 5)',
+        title: 'Shut up and dance - Walk the moon (Capo 3 in C)',
         link: 'https://tabs.ultimate-guitar.com/tab/walk-the-moon/shut-up-and-dance-chords-1673689'
     },
     {
@@ -72,7 +72,7 @@ export const songs = [
         link: 'https://tabs.ultimate-guitar.com/tab/ed-sheeran/thinking-out-loud-chords-1486860'
     },
     {
-        title: 'Uptown funk - Bruno Mars',
+        title: 'Uptown funk - Bruno Mars (Em - A7)',
         link: 'https://tabs.ultimate-guitar.com/tab/mark-ronson/uptown-funk-chords-1683393'
     },
     {

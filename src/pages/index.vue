@@ -10,15 +10,17 @@
 const ultimateGuitarTabUrl = ref('https://tabs.ultimate-guitar.com/tab/misc-soundtrack/grease-youre-the-one-that-i-want-chords-78010')
 
 // Reactive fetch using useAsyncData
-const {data, status, error, refresh} = useAsyncData(`tab-${ultimateGuitarTabUrl.value}`,
-    () => $fetch(`/api/ultimate-guitar-tabs`,
-        {
-          params: {url: ultimateGuitarTabUrl.value},
-          retry: false
-        }
-    ),
-    {lazy: true, immediate: true, })
-
+const {data, status, refresh, error} = useAsyncData(
+    `tab-${ultimateGuitarTabUrl.value}`,
+    () => {
+      if (!ultimateGuitarTabUrl.value) throw new Error('Invalid song URL');
+      return $fetch('/api/ultimate-guitar-tabs', {
+        params: {url: ultimateGuitarTabUrl.value},
+        retry: false,
+      });
+    },
+    {lazy: false, immediate: false}
+);
 // Manual fetch trigger for custom search actions
 const fetchTabData = () => {
   data.value = null
