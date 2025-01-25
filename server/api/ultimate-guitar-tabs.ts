@@ -16,7 +16,7 @@ export default defineEventHandler(async (event: H3Event) => {
 
 
     // fetch the whole page
-    const response = await fetch(`https://api.codetabs.com/v1/proxy/?quest=${url}`);
+    const response = await fetch(`${url}`);
     const data = await response.text();
 
     // Store the fetched result in the cache
